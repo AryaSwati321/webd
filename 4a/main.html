@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Mobile Website</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    
+    <div data-role="page" id = "home">
+        <div data-role = "header" , data-theme="b">
+            <h2>My Mobile Website</h2>
+        </div>    
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href = "#home" class="ui-btn-active">Home</a></li>
+                <li><a href = "#about" >About</a></li>
+                <li><a href = "#contact" >Contact Info</a></li>
+            </ul>
+        </div>
+
+        <div data-role="content">
+            <h2>Welcome!</h2>
+            <p>This is an interactive Website.</p>
+
+            <center>
+            <div class="rows">
+                    <img src= "ganesha.jpg" height ="200px" width = "200px">
+                    <img src= "ganesha.jpg" height ="200" width = "200px" >
+                    <img src= "ganesha.jpg" height ="200" width = "200px" >
+            </div>
+
+            <br>
+
+            <div class="rows">
+                <img src= "ganesha.jpg" height ="200" width = "200px">
+                <img src= "ganesha.jpg" height ="200" width = "200px">
+                <img src= "ganesha.jpg" height ="200" width = "200px">
+            </div>
+
+        </center>
+        </div>
+
+        <div data-role = "footer" data-theme="b" data-position="fixed">
+            <h2>&copy; 2025 Interactive Website | Komal Arts</h2>
+        </div>
+    </div>
+
+    <div data-role="page" id = "about">
+        <div data-role="header" data-theme="b">
+            <h2>About Page</h2>
+            <a href="#home" data-icon ="home" class = "ui-btn-right" data-iconpos="notext"> </a>
+        </div>
+
+        <div data-role="content">
+            <h3>This is a interactive mobile website created using jquery.</h3>
+        </div>
+
+        <div data-role="footer" data-theme="" data-position="fixed">
+            <h2>About Page Footer</h2>
+        </div>
+    </div>
+
+    <div data-role="page" id = "contact">
+        <div data-role="header" data-theme="b">
+            <h2>Contact information Page</h2>
+            <a href="#home" data-icon ="home" class = "ui-btn-right" data-iconpos="notext"> </a>
+        </div>
+
+        <div data-role="content">
+            <form>
+                <label for="Name">Name:</label>
+                <input type="name" name="name" id="name" placeholder="Your Name" >
+
+                <label for="Email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Your email id" >
+
+                <label for="Message">Message:</label>
+                <textarea name="Message" id="Message" placeholder="Your Text Messsage" ></textarea>
+
+                <input type="submit" value="Send" class="ui-btn ui-shadow">
+            </form>
+        </div>
+
+        <div data-role="footer" data-theme="" data-position="fixed">
+            <h2>Contact Page Footer</h2>
+        </div>
+    </div>
+</body>
+</html>

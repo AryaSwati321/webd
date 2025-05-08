@@ -1,0 +1,16 @@
+//Dockerfile
+FROM node:alpine
+COPY . /parta     ---(parta=folder name)
+CMD ["node" , "/parta/script.js"]      ----(script.js=file name)
+
+//script.js
+console.log("Name");
+
+//Commands
+>docker --version
+>node script.js
+>sudo docker build -t parta .
+>sudo docker images
+>sudo docker run parta
+
+

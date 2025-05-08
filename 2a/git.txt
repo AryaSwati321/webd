@@ -1,0 +1,13 @@
+>cd path/to/your/project
+
+>git init
+
+>git add .
+
+>git commit -m "Initial commit"
+
+>git remote add origin https://github.com/your-username/my-first-repo.git
+In the 5th command use set-url instead of Add when remote origin already exist message is shown on terminal
+   git remote set-url origin https://github.com/your-username/my-first-repo.git
+
+>git push -u origin master  # or use 'main' if your default branch is main
